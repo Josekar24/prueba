@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" href="../imagenes/favicon2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
+    <div class="container">
+      <a class="navbar-brand text-info fw-bolder" href="#">JCNL</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse show" id="navbarsExample07" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+           <a href="../index.html" class="nav-link px-2 text-white">Curriculum</a></li>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-2 text-white">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutme.html" class="nav-link px-2 text-white">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a href="gallery.html" class="nav-link px-2 text-white">Trabajos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="form-container min-vh-100">
+    <div class="form-box">
+      <h1 class=" text-center m-5 fw-semibold"> Contacto 📬 </h1>
+      <form action="" method="post" validate>
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" name="nombre" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese su nombre.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="apellidos" class="form-label">Apellidos:</label>
+          <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese sus apellidos.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Género:</label><br>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="generoM" value="masculino" required>
+            <label class="form-check-label" for="generoM">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="genero" id="generoF" value="femenino" required>
+            <label class="form-check-label" for="generoF">Femenino</label>
+          </div>
+          <div class="invalid-feedback d-block">
+            Por favor, seleccione su género.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">
+            Por favor, ingrese un email válido.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="motivo" class="form-label">Motivo de consulta:</label>
+          <select class="form-select" id="motivo" name="motivo" required>
+            <option value="">Seleccione un motivo</option>
+            <option value="consulta_general">Consulta General</option>
+            <option value="soporte_tecnico">Soporte Técnico</option>
+            <option value="comentarios">Comentarios</option>
+          </select>
+          <div class="invalid-feedback">
+            Por favor, seleccione un motivo de consulta.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje:</label>
+          <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+          <div class="invalid-feedback">
+            Por favor, ingrese su mensaje.
+          </div>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+          <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+          <div class="invalid-feedback">
+            Debe aceptar los términos y condiciones.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <p>&copy; 2024 Portfolio - Todos los derechos reservados</p>
+    </div>
+</body>
+</html>
